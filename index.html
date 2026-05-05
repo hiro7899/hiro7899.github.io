@@ -3,140 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gwanho Jung's PortFolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
+    <title>Gwanho J. Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 아이콘 폰트 (FontAwesome 등) 연결 권장 -->
 </head>
 <body>
-    <div class="container">
 
-        <header> 
-            <a href="#" id="logo">Gwanho J.</a>
-            <nav class="navbar">
-                <a href="#about_me">About me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experiences">Experiences</a>
-            </nav>
-            <div class="icons">
-                <img src="img/icons/mdi_earth.svg">
-            </div>  
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Gwanho J.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+        </ul>
+        <div class="lang-selector">🌐 ▾</div>
+    </nav>
 
-        <!--main-->
-        <div>
-            <h1>Hello I'm Gwanho</h1>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <img src="" alt="">
-        </div>
-
-        <!--about me-->
-        <div>
-            <h1>About me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-        </div>
-
-        <!--My Skills-->
-        <div>
-            <h1>My Skills</h1>
-            <div>
-                <img src="" alt="">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hello I'm <span class="highlight">Gwanho</span></h1>
+            <p>A quiet but charismatic young man with many dreams</p>
+            <div class="social-icons">
+                <i class="fab fa-github"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
             </div>
         </div>
+    </header>
 
-        <!--My Projects-->
-        <div>
-            <h1>My Projects</h1>
-            <div>
-                <div><img src="" alt=""></div>
-                <div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About <span class="highlight">Me</span></h2>
+        <div class="about-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My <span class="highlight">Skills</span></h2>
+        <div class="skills-grid">
+            <!-- 이미지의 아이콘들을 여기에 배치 -->
+            <img src="img/icons/java.svg" alt="Java">
+            <img src="img/icons/eclipse.svg" alt="Eclipse">
+            <img src="img/icons/spring.svg" alt="Spring">
+            <img src="img/icons/mybatis.svg" alt="Mybatis">
+            <img src="img/icons/html.svg" alt="HTML5">
+            <img src="img/icons/js.svg" alt="JS">
+            <img src="img/icons/css.svg" alt="CSS">
+            <img src="img/icons/thymeleaf.svg" alt="Thymeleaf">
+            <img src="img/icons/php.svg" alt="PHP">
+            <img src="img/icons/oracle sql.svg" alt="Oracle">
+            <img src="img/icons/exerd.svg" alt="ExERD">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My <span class="highlight">Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-main card">
+                <div class="img-placeholder"></div>
+                <div class="project-info">
                     <h3>PortFolio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. </p>
-                    <div>
-                        <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <div class="tags">#HTML #CSS #JS</div>
+                    <div class="buttons">
+                        <button class="btn-github">GitHub</button>
+                        <button class="btn-visit">Visit</button>
                     </div>
                 </div>
-                <div>
-                    <div><button>Github</button></div>
-                    <div><button>Visit</button></div>
+            </div>
+            <div class="project-list">
+                <div class="project-item card">
+                    <h4>PortFolio</h4>
+                    <button class="btn-github-sm">GitHub</button>
+                </div>
+                <!-- ... 추가 프로젝트 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences">
+        <h2>My <span class="highlight">Experiences</span></h2>
+        <div class="timeline">
+            <!-- 타임라인 디자인 구현 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h4>Okcheon Middle School</h4>
+                    <p>2016.3 ~ 2019.2</p>
                 </div>
             </div>
-
-            <div>
-                <div>
-                    <h3>PortFolio</h3>
-                    <div><button>Github</button></div>
-                </div>
-
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. </p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3>PortFolio</h3>
-                    <div><button>Github</button></div>
-                </div>
-
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. </p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3>PortFolio</h3>
-                    <div><button>Github</button></div>
-                </div>
-
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. </p>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h4>Okcheon High School</h4>
+                    <p>2019.3 ~ 2021.2</p>
                 </div>
             </div>
         </div>
-        
-        <!--My Experiences-->
-        <div>
-        <h1>My Experiences</h1>
-        <div>
-            <div>
-                <div>
-                    <h3>Okcheon Middle School</h3>
-                    <p>To join the KOI 2018</p>
-                    <p>2016.3. ~ 2018.2.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h3>Okcheon High School</h3>
-                    <p>2019.3. ~ 2021.2.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h3>Korea Polytechnics IV</h3>
-                    <p>Software Department</p>
-                    <p>2022.3. ~</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h3>Military Service</h3>
-                    <p>In R.O.K.A.F. Air Munitions Maintenance</p>
-                    <p>2022.7. ~ 2024.4.</p>
-                </div>
-            </div>
-        </div>
-        
-        <footer>
-            <p>COPYRIGHT 2010 BY KOREA POLYTECHNICS. ALL RIGHTS RESERVED.</p>
-        </footer>
-    </div>
+    </section>
+
+    <footer>
+        <p>COPYRIGHT 2024 BY KOREA POLYTECHNICS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
 </body>
 </html>

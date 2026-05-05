@@ -1,0 +1,112 @@
+/* 기본 설정 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.highlight {
+    color: #8e80eb; /* 보라색 포인트 컬러 */
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+/* Section 공통 */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* About Section */
+.about {
+    background-color: #333;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Skills Section */
+.skills {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('skills-bg.jpg') no-repeat center/cover;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skills-grid img {
+    width: 50px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
+/* Projects Card */
+.card {
+    background: #3a3a3a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    font-size: 0.7rem;
+    color: #777;
+    text-align: center;
+    background-color: #111;
+}
