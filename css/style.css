@@ -39,7 +39,7 @@ body, html {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/main_img.jpg') no-repeat center/cover;
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -74,7 +74,7 @@ h2 {
 
 /* Skills Section */
 .skills {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('skills-bg.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/skill_img.jpg') no-repeat center/cover;
 }
 
 .skills-grid {
@@ -109,4 +109,105 @@ footer {
     color: #777;
     text-align: center;
     background-color: #111;
+}
+/* Experiences 섹션 배경 (하단 푸른 광원 효과) */
+.experiences {
+    background: linear-gradient(to bottom, #000000, #000814, #001a33); /* 어두운 배경 */
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 중앙 수직선 */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%; /* 반절씩 차지 */
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+/* 홀수/짝수 방향 설정 */
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* 타임라인 원형 포인트 */
+.timeline-dot {
+    position: absolute;
+    top: 25px;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #8e80eb; /* 포인트 컬러 */
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left .timeline-dot {
+    right: -11px; /* 선 위에 위치 */
+}
+
+.right .timeline-dot {
+    left: -11px; /* 선 위에 위치 */
+}
+
+/* 텍스트 스타일 */
+.timeline-content h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.timeline-content .sub-text {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.timeline-content .date {
+    font-size: 0.8rem;
+    color: #8e80eb;
+    font-weight: bold;
+}
+
+/* 반응형 처리 (화면이 작아질 때 선을 왼쪽으로 밀기) */
+@media screen and (max-width: 768px) {
+    .timeline-line {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left !important;
+    }
+    .timeline-item.right {
+        left: 0;
+    }
+    .left .timeline-dot, .right .timeline-dot {
+        left: 20px;
+    }
 }
